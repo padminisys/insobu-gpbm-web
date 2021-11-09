@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: ./insobu-gpbm-web-0.0.1-SNAPSHOT.zip
+    destination: /tmp

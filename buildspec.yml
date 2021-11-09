@@ -33,8 +33,10 @@ phases:
       - echo Build completed on `date`
 
 artifacts:
+  name: insobu-gpbm-web.zip
   files:
     - spring/target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
+    - appspec.yml
   discard-paths: yes
 
 cache:
