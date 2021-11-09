@@ -9,6 +9,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
+      - apt-get install -y openjdk-11-jdk
       - apt-get install -y maven
       - apt-get install -y nodejs
       - apt-get install -y npm
@@ -20,7 +21,7 @@ phases:
       - echo Build started on `date`
       - cd react
       - npm install
-      - npm build
+      - npm run-script build
       - cd ..
       - cd spring
       - mvn install
@@ -33,7 +34,7 @@ phases:
 
 artifacts:
   files:
-    - spring/target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
+    - target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
   discard-paths: yes
 
 cache:
