@@ -34,7 +34,7 @@ phases:
 
 artifacts:
   files:
-    - target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
+    - spring/target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
   discard-paths: yes
 
 cache:
