@@ -36,6 +36,7 @@ artifacts:
   files:
     - spring/target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
     - appspec.yml
+    - scripts/application_start.sh
   discard-paths: yes
 
 cache:
