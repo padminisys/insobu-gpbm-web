@@ -1,1 +1,1 @@
-sudo java -jar spring/target/insobu-gpbm-web-0.0.1-SNAPSHOT.jar
+sudo java -jar insobu-gpbm-web-0.0.1-SNAPSHOT.jar
