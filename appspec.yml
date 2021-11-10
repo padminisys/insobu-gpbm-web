@@ -3,6 +3,8 @@ os: linux
 files:
   - source: insobu-gpbm-web-0.0.1-SNAPSHOT.jar
     destination: /tmp
+  - source: application_start.sh
+    destination: /tmp
 hooks:
   ApplicationStart:
     - location: application_start.sh
