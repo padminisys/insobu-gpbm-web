@@ -5,5 +5,5 @@ files:
     destination: /tmp
 hooks:
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: application_start.sh
       timeout: 3600
