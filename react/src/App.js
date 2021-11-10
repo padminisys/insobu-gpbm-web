@@ -13,7 +13,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h3>AWS powers deployment of this application.</h3>
+        <h3>Shell scripts deployment of this application.</h3>
         <a
           className="App-link"
           href="https://reactjs.org"
