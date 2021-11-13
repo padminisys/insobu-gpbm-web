@@ -1,1 +1,1 @@
-java -jar /tmp/insobu-gpbm-web-0.0.1-SNAPSHOT.jar > application_logs.txt
+java -jar /tmp/insobu-gpbm-web-0.0.1-SNAPSHOT.jar >log.txt &
