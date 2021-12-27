@@ -3,7 +3,3 @@ os: linux
 files:
   - source: insobu-gpbm-web-0.0.1-SNAPSHOT.jar
     destination: /tmp
-hooks:
-  AfterInstall:
-    - location: application_start.sh
-      timeout: 3600
