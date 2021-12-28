@@ -8,7 +8,7 @@ class LoginForm extends React.Component {
   }
 
   onFinish(values) {
-    console.log('Success is done:', values);
+    console.log('Success i', values);
   }
 
   onFinishFailed(errorInfo) {
