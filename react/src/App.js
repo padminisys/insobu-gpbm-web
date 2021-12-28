@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.less';
 import { Button } from 'antd';
-import LoginForm from './loginForm';
+// import LoginForm from './loginForm';
+import CustomerForm from './CustomerForm'
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <LoginForm />
+        {/* <LoginForm /> */}
+        <CustomerForm/>
         <a
           className='App-link'
           href='https://reactjs.org'
