@@ -1,19 +1,15 @@
-import logo from './logo.svg';
+
 import './App.less';
-import { Button } from 'antd';
+// import { Button } from 'antd';
+import LoginForm from './loginForm';
+import CustomerForm from './CustomerForm';
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <div className='App'>
-          <Button type='primary'>Submit form</Button>
-        </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h3>Shell scripts deployment of this application.</h3>
+      <LoginForm />
+        <CustomerForm/>
         <a
           className='App-link'
           href='https://reactjs.org'
