@@ -1,14 +1,12 @@
 import { Form, Input, Button, Checkbox } from 'antd';
 import React from 'react';
+import ValidateCrdential from './validateCredential';
 
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
     this.submitFormForLogin = this.submitFormForLogin.bind(this);
-  }
-
-  onFinish(values) {
-    console.log('Success:', values);
   }
 
   onFinishFailed(errorInfo) {
@@ -20,6 +18,7 @@ class LoginForm extends React.Component {
     console.log(values);
     console.log('Your user name ' + values.username);
     console.log('Your Password' + values.password);
+    this.setState(values);
   }
 
   render() {
@@ -29,7 +28,7 @@ class LoginForm extends React.Component {
         initialValues={{
           remember: true
         }}
-        onFinish={this.onFinish}
+        onFinish={this.submitFormForLogin}
         onFinishFailed={this.onFinishFailed}
         autoComplete='off'>
         <Form.Item
@@ -68,6 +67,7 @@ class LoginForm extends React.Component {
             Submit
           </Button>
         </Form.Item>
+        <ValidateCrdential cred={this.state.username} />
       </Form>
     );
   }
