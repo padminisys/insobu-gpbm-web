@@ -1,26 +1,26 @@
 import { Form, Input, Button, Checkbox } from 'antd';
 import React from 'react';
 
+
+
+
 class LoginForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.submitFormForLogin = this.submitFormForLogin.bind(this);
-  }
+  
 
   onFinish(values) {
-    console.log('Success i', values);
+    console.log('Success',values);
   }
 
   onFinishFailed(errorInfo) {
-    console.log('Failed:', errorInfo);
-  }
+  console.log('Failed:', errorInfo);
+   }
 
-  submitFormForLogin(values) {
-    console.log('Login Success');
-    console.log(values);
-    console.log('Your user name ' + values.username);
-    console.log('Your Password' + values.password);
-  }
+  // submitFormForLogin(values) {
+  //   console.log('Login Success');
+  //   console.log(values);
+  //   console.log('Your user name ' + values.username);
+  //   console.log('Your Password' + values.password);
+  // }
 
   render() {
     return (
@@ -64,7 +64,7 @@ class LoginForm extends React.Component {
           <Button
             type='danger'
             htmlType='submit'
-            onClick={this.submitFormForLogin}>
+            onClick={this.onFinish}>
             Submit
           </Button>
         </Form.Item>
