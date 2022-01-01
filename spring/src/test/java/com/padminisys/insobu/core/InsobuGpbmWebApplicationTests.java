@@ -14,7 +14,6 @@ import java.time.Instant;
 import java.time.LocalDate;
 
 @SpringBootTest
-@ActiveProfiles("local")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 class InsobuGpbmWebApplicationTests {
 
