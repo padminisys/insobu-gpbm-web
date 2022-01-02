@@ -18,3 +18,13 @@ management:
         include: "*"
     shutdown:
       enabled: true
+
+keycloak:
+  realm: insobu-dev
+  auth-server-url: https://dev.insobu.padmini.systems/auth
+  ssl-required: external
+  resource: insobu-api
+  credentials:
+    secret: 628989a2-b08c-4daa-b82d-3ce9908c09f1
+  use-resource-role-mappings: true
+  bearer-only: true
