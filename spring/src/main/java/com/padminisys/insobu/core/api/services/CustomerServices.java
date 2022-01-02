@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import java.sql.Timestamp;
 import java.time.Instant;
 
@@ -20,6 +21,7 @@ public class CustomerServices {
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
 
+    @RolesAllowed("user")
     @PostMapping("create")
     public @ResponseBody
     CustomerEntity createCustomer(@RequestBody Customer customer) {

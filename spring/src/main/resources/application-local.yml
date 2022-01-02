@@ -7,3 +7,16 @@ spring:
     url:  jdbc:postgresql://localhost:5432/insobu
     username: postgres
     password: rbd@6321P
+
+server:
+  port: 8000
+
+keycloak:
+  realm: insobu-local
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: insobu-api
+  credentials:
+    secret: DbLPSkcsQ6kUpmuC8bYTEeTFJIzysUIj
+  use-resource-role-mappings: true
+  bearer-only: true
